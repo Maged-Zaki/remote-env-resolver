@@ -22,3 +22,10 @@ Update your dependencies:
 npm uninstall remote-env-resolver
 npm install runtime-env-resolver
 ```
+
+And update imports:
+
+```diff
+- import { resolveEnvVariables, SSMProvider } from "remote-env-resolver";
++ import { resolveEnvVariables, SSMProvider } from "runtime-env-resolver";
+```
